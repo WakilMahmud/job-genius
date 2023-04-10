@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import FeaturedJob from "./FeaturedJob";
+import { FeaturedJobContext } from "./Home";
 
-const FeaturedJobs = ({ featuredJobs }) => {
-	const [click, setClick] = useState(false);
+const FeaturedJobs = () => {
+	const featuredJobs = useContext(FeaturedJobContext);
 	// console.log(featuredJobs);
+	const [click, setClick] = useState(false);
+
 	return (
-		<>
+		<section className="max-w-7xl mx-auto my-32 flex flex-col justify-center items-center font-manrope">
 			<h1 className="font-extrabold text-4xl lg:text-5xl px-2 md:px-0">Featured Jobs</h1>
 			<p className="font-medium text-base text-gray-500 my-8 px-2 md:px-0">
 				Explore thousands of job opportunities with all the information you need. Its your future
@@ -18,7 +21,7 @@ const FeaturedJobs = ({ featuredJobs }) => {
 			<button className={`btn btn-primary w-36 h-12 mt-8 capitalize ${click ? "hidden" : "block"}`} onClick={() => setClick(!click)}>
 				See All Jobs
 			</button>
-		</>
+		</section>
 	);
 };
 

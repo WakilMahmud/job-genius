@@ -1,9 +1,12 @@
-import React from "react";
+import React, { createContext } from "react";
 
 import Banner from "./Banner";
 import JobCategories from "./JobCategories";
 import { useLoaderData } from "react-router-dom";
 import FeaturedJobs from "./FeaturedJobs";
+
+export const JobCategoryContext = createContext([]);
+export const FeaturedJobContext = createContext([]);
 
 const Home = () => {
 	const { jobCategories, featuredJobs } = useLoaderData();
@@ -12,20 +15,14 @@ const Home = () => {
 
 	return (
 		<>
-			{/* Banner Section */}
-			<section className="bg-indigo-50 font-manrope">
-				<Banner />
-			</section>
+			<Banner />
 
-			{/* Job Category List */}
-			<section className="max-w-7xl mx-auto my-32 flex flex-col justify-center items-center font-manrope">
-				<JobCategories jobCategories={jobCategories}></JobCategories>
-			</section>
-
-			{/* Featured Jobs*/}
-			<section className="max-w-7xl mx-auto my-32 flex flex-col justify-center items-center font-manrope">
-				<FeaturedJobs featuredJobs={featuredJobs}></FeaturedJobs>
-			</section>
+			<JobCategoryContext.Provider value={jobCategories}>
+				<FeaturedJobContext.Provider value={featuredJobs}>
+					<JobCategories></JobCategories>
+					<FeaturedJobs></FeaturedJobs>
+				</FeaturedJobContext.Provider>
+			</JobCategoryContext.Provider>
 		</>
 	);
 };

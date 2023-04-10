@@ -2,7 +2,7 @@ import React from "react";
 import BannerImg from "../assets/Images/banner.png";
 const Banner = () => {
 	return (
-		<>
+		<section className="bg-indigo-50 font-manrope">
 			<div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-3 lg:px-0">
 				<div className="lg:w-3/5 ">
 					<h1 className="font-extrabold text-4xl lg:text-7xl">
@@ -20,7 +20,7 @@ const Banner = () => {
 					<img className="object-cover" src={BannerImg} alt="Banner Image" />
 				</div>
 			</div>
-		</>
+		</section>
 	);
 };
 

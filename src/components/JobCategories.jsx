@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { JobCategoryContext } from "./Home";
 
-const JobCategories = ({ jobCategories }) => {
+const JobCategories = () => {
+	const jobCategories = useContext(JobCategoryContext);
 	// console.log(jobCategories);
 	return (
-		<>
+		<section className="max-w-7xl mx-auto my-32 flex flex-col justify-center items-center font-manrope">
 			<h1 className="font-extrabold text-4xl lg:text-5xl px-2 md:px-0">Job Category List</h1>
 			<p className="font-medium text-base text-gray-500 my-8 px-2 md:px-0">
 				Explore thousands of job opportunities with all the information you need. Its your future
@@ -24,7 +26,7 @@ const JobCategories = ({ jobCategories }) => {
 					);
 				})}
 			</div>
-		</>
+		</section>
 	);
 };
 
