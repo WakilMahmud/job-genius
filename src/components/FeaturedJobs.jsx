@@ -11,11 +11,11 @@ const FeaturedJobs = ({ featuredJobs }) => {
 				Explore thousands of job opportunities with all the information you need. Its your future
 			</p>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-				{featuredJobs.slice(0, 4).map((featureJob) => (
-					<FeaturedJob key={featureJob.id} featureJob={featureJob}></FeaturedJob>
-				))}
+				{click
+					? featuredJobs.map((featureJob) => <FeaturedJob key={featureJob.id} featureJob={featureJob}></FeaturedJob>)
+					: featuredJobs.slice(0, 4).map((featureJob) => <FeaturedJob key={featureJob.id} featureJob={featureJob}></FeaturedJob>)}
 			</div>
-			<button className="btn btn-primary w-36 h-12 mt-8 capitalize" onClick={() => setClick(!click)}>
+			<button className={`btn btn-primary w-36 h-12 mt-8 capitalize ${click ? "hidden" : "block"}`} onClick={() => setClick(!click)}>
 				See All Jobs
 			</button>
 		</>
