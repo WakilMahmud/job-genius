@@ -1,0 +1,116 @@
+[
+	{
+		"id": 1,
+		"company_logo": "../src/assets/Logo/google.png",
+		"job_title": "Technical Database Engineer",
+		"company_name": "Google LLC",
+		"job_type": "Remote",
+		"location": "Dhaka, Bangladesh",
+		"job_duration": "Full Time",
+		"salary": "120K-150K",
+		"job_description": "Google is seeking a Technical Database Engineer to design, build, and maintain the critical infrastructure that supports our mission-critical applications. As a member of our team, you will have the opportunity to work on complex data problems, and develop innovative solutions that drive business value for Google. In this role, you will be responsible for database design, performance optimization, and capacity planning. You will also work closely with our development teams to ensure that our applications are highly available and scalable.",
+		"job_responsibility": "1. Design, implement, and maintain highly available, distributed database systems.\n2. Develop and implement strategies to optimize database performance and ensure maximum uptime.\n3. Collaborate with development teams to design and implement data models for new applications.\n4. Design and implement backup and recovery strategies to ensure the integrity of our data.\n5. Develop and maintain database documentation, including data standards, procedures, and definitions.",
+		"educational_requirements": "Bachelor's degree in Computer Science or a related field",
+		"experiences": "5+ years of experience in database administration, including experience with SQL, NoSQL, and distributed databases. Strong understanding of database internals and architecture.",
+		"contact_information": {
+			"phone": "01750-00 00 00",
+			"email": "info@gmail.com",
+			"address": "123 Main Street, Seattle, WA 98101"
+		}
+	},
+	{
+		"id": 2,
+		"company_logo": "../src/assets/Logo/netflix.png",
+		"job_title": "Senior Product Designer",
+		"company_name": "Netflix",
+		"job_type": "Onsite",
+		"location": "Los Gatos, USA",
+		"job_duration": "Full Time",
+		"salary": "150K-200K",
+		"job_description": "Netflix is looking for a Senior Product Designer to join our design team. As a Senior Product Designer, you will be responsible for creating and leading the design of world-class user experiences for our streaming service. You will work closely with cross-functional teams including product managers, engineers, and data scientists to design innovative solutions that delight our members. You will also be responsible for mentoring other designers and contributing to the design culture at Netflix.",
+		"job_responsibility": "1. Lead the design of new product features and enhancements across platforms and devices.\n2. Conduct user research, gather insights, and translate findings into design solutions.\n3. Create user flows, wireframes, prototypes, and high-fidelity visual designs.\n4. Collaborate with product managers, engineers, and data scientists to define requirements and ensure design feasibility.\n5. Mentor junior designers and contribute to the design culture at Netflix.",
+		"educational_requirements": "Bachelor's or Master's degree in Interaction Design, Human-Computer Interaction, or a related field.",
+		"experiences": "8+ years of experience as a product designer with a portfolio showcasing end-to-end design processes, including UX research, information architecture, interaction design, and visual design. Experience working with cross-functional teams and managing junior designers.",
+		"contact_information": {
+			"phone": "+1 123-456-7890",
+			"email": "jobs@netflix.com",
+			"address": "100 Winchester Cir, Los Gatos, CA 95032, USA"
+		}
+	},
+	{
+		"id": 3,
+		"company_logo": "../src/assets/Logo/tesla.png",
+		"job_title": "Software Engineer",
+		"company_name": "Tesla",
+		"job_type": "Onsite",
+		"location": "Palo Alto, USA",
+		"job_duration": "Part time",
+		"salary": "120K 160K",
+		"job_description": "Tesla is seeking a highly motivated software engineer to join our team. As a software engineer, you will be responsible for designing and developing software solutions for Tesla's electric vehicles, energy products, and solar systems. You will work closely with cross-functional teams including product managers, designers, and engineers to develop software that meets the needs of our customers. You will also be responsible for contributing to the continuous improvement of our software development process and culture.",
+		"job_responsibility": "1. Design, develop, and test software solutions for Tesla's electric vehicles, energy products, and solar systems.\n2. Collaborate with cross-functional teams to define requirements and ensure software solutions meet the needs of our customers.\n3. Contribute to the continuous improvement of Tesla's software development process and culture.\n4. Participate in code reviews, testing, and other quality assurance activities.\n5. Stay up-to-date with emerging technologies and trends in software engineering.",
+		"educational_requirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.",
+		"experiences": "5+ years of experience in software engineering, with a strong background in object-oriented programming and software design. Experience with web development, cloud computing, and mobile app development is a plus. Experience in the automotive industry is also a plus.",
+		"contact_information": {
+			"phone": "+1 123-456-7890",
+			"email": "jobs@tesla.com",
+			"address": "3500 Deer Creek Rd, Palo Alto, CA 94304, USA"
+		}
+	},
+	{
+		"id": 4,
+		"company_logo": "../src/assets/Logo/google-1.png",
+		"job_title": "Software Developer",
+		"company_name": "Google",
+		"job_type": "Onsite",
+		"location": "Mountain View, USA",
+		"job_duration": "Part Time",
+		"salary": "130K-160K",
+		"job_description": "Google is seeking a highly motivated software developer to join our team in Mountain View. In this role, you will work on cutting-edge projects that impact billions of users worldwide. You will collaborate with cross-functional teams, including product, design, and engineering, to develop and launch new features and products. You will also participate in code reviews, contribute to the development of best practices, and mentor junior developers.",
+		"job_responsibility": "1. Develop and launch new features and products that impact billions of users worldwide.\n2. Collaborate with cross-functional teams, including product, design, and engineering, to develop innovative solutions to complex problems.\n3. Participate in code reviews and contribute to the development of best practices.\n4. Mentor junior developers and contribute to a positive and collaborative team culture.\n5. Stay up-to-date with emerging trends and best practices in software development.",
+		"educational_requirements": "Bachelor's or Master's degree in Computer Science, Engineering, or a related field.",
+		"experiences": "5+ years of experience in software development, with a focus on backend or full-stack development. Strong coding skills in one or more programming languages such as Java, Python, or C++. Experience with cloud technologies such as Google Cloud Platform or AWS is a plus.",
+		"contact_information": {
+			"phone": "+1 123-456-7890",
+			"email": "jobs@google.com",
+			"address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA"
+		}
+	},
+	{
+		"id": 5,
+		"company_logo": "../src/assets/Logo/Facebook.png",
+		"job_title": "Senior Data Scientist",
+		"company_name": "Facebook",
+		"job_type": "Onsite",
+		"location": "Menlo Park, USA",
+		"job_duration": "Full Time",
+		"salary": "150K-200K",
+		"job_description": "Facebook is seeking a highly skilled senior data scientist to join our team. In this role, you will be responsible for designing and implementing machine learning algorithms and statistical models to solve complex business problems. You will work with large-scale data sets and develop predictive models to support product development, marketing, and business strategy. You will also collaborate with cross-functional teams to develop new data products and improve data infrastructure.",
+		"job_responsibility": "1. Design and implement machine learning algorithms and statistical models to solve complex business problems.\n2. Develop predictive models to support product development, marketing, and business strategy.\n3. Work with cross-functional teams to develop new data products and improve data infrastructure.\n4. Communicate complex data insights to both technical and non-technical stakeholders.\n5. Stay up-to-date with emerging technologies and trends in data science and machine learning.",
+		"educational_requirements": "Master's or PhD in Computer Science, Mathematics, Statistics, or a related field.",
+		"experiences": "10+ years of experience in data science or a related field, with a proven track record of delivering business impact. Strong programming skills in Python, R, or a similar language. Experience with big data technologies such as Hadoop, Spark, or Hive is a plus.",
+		"contact_information": {
+			"phone": "+1 123-456-7890",
+			"email": "jobs@facebook.com",
+			"address": "1 Hacker Way, Menlo Park, CA 94025, USA"
+		}
+	},
+	{
+		"id": 6,
+		"company_logo": "../src/assets/Logo/Youtube.png",
+		"job_title": "YouTube Marketing Manager",
+		"company_name": "YouTube",
+		"job_type": "Onsite",
+		"location": "San Bruno, USA",
+		"job_duration": "Part time",
+		"salary": "120K-150K",
+		"job_description": "YouTube is seeking a highly motivated marketing manager to drive audience growth and engagement on the platform. In this role, you will develop and execute marketing strategies and campaigns to attract and retain viewers and creators. You will work closely with cross-functional teams, including product, engineering, and sales, to identify opportunities and drive impact. You will also analyze and report on the performance of marketing initiatives to inform future strategy.",
+		"job_responsibility": "1. Develop and execute marketing strategies and campaigns to drive audience growth and engagement on the platform.\n2. Work closely with cross-functional teams, including product, engineering, and sales, to identify opportunities and drive impact.\n3. Analyze and report on the performance of marketing initiatives to inform future strategy.\n4. Collaborate with creators and partners to develop co-marketing campaigns and initiatives.\n5. Stay up-to-date with emerging trends and best practices in YouTube marketing.",
+		"educational_requirements": "Bachelor's or Master's degree in Marketing, Communications, Business Administration, or a related field.",
+		"experiences": "5+ years of experience in marketing, with a focus on digital marketing and social media. Experience with YouTube marketing or audience development is a plus. Strong analytical skills and experience with data analysis tools such as Google Analytics or Tableau.",
+		"contact_information": {
+			"phone": "+1 123-456-7890",
+			"email": "jobs@youtube.com",
+			"address": "901 Cherry Ave, San Bruno, CA 94066, USA"
+		}
+	}
+]
