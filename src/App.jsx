@@ -8,7 +8,6 @@ function App() {
 			<div className="bg-indigo-50">
 				<Navbar />
 			</div>
-
 			<Outlet />
 			<Footer />
 		</>

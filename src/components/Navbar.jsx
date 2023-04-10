@@ -9,8 +9,8 @@ const Navbar = () => {
 					Job Genius
 				</a>
 			</div>
-			<div className="navbar-center flex font-manrope font-medium text-base text-gray-500">
-				<ul className="menu menu-horizontal px-1">
+			<div className="navbar-center  md:flex font-manrope font-medium text-base text-gray-500">
+				<ul className="menu  md:menu-horizontal px-1">
 					<li className="mr-1">
 						<Link to="/">Home</Link>
 					</li>
@@ -26,7 +26,9 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<button className="w-48 py-2 rounded-lg font-manrope font-extrabold text-xl bg-primary text-white">Start Applying</button>
+				<button className="w-48 py-2 rounded-lg font-manrope font-extrabold text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
+					Start Applying
+				</button>
 			</div>
 		</nav>
 	);
