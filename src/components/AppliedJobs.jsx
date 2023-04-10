@@ -27,9 +27,11 @@ const AppliedJobs = () => {
 	return (
 		<>
 			<BannerTitle>Applied Jobs</BannerTitle>
-			{showJob.map((job) => (
-				<AppliedJob key={job.id} job={job}></AppliedJob>
-			))}
+			<div className="max-w-7xl mx-auto flex flex-col my-32">
+				{showJob.map((job) => (
+					<AppliedJob key={job.id} job={job}></AppliedJob>
+				))}
+			</div>
 		</>
 	);
 };
