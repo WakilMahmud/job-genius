@@ -1,17 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Dollar from "../assets/Icons/Frame-5.png";
 import Title from "../assets/Icons/Frame-1.png";
 import Phone from "../assets/Icons/Frame-2.png";
 import Email from "../assets/Icons/Frame-3.png";
 import Address from "../assets/Icons/Frame-4.png";
+import { addToDb, getApplyJob } from "../utilities/fakeDb";
 
 const JobDetail = ({ job }) => {
 	// console.log(job);
 	const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title } = job;
 
+	const [jobs, setJobs] = useState([]);
+
+	useEffect(() => {
+		const storedJobs = getApplyJob();
+		const savedJobs = [];
+		// step 1: get id of the addedJob
+		for (const id in storedJobs) {
+			// step 2: get jb from jobs state by using id
+			const addedJob = jobs.find((jb) => jb.id === id);
+			if (addedJob) {
+				// step 3: add quantity
+				const quantity = storedJobs[id];
+				addedJob.quantity = quantity;
+				// step 4: add the added jb to the saved jobs
+				savedJobs.push(addedJob);
+			}
+			// console.log('added jb', addedJob)
+		}
+		// step 5: set the jobs
+		setJobs(savedJobs);
+	}, [job]);
+
+	const handleApply = (job) => {
+		// console.log(job);
+		let newJob = [];
+
+		const exists = jobs.find((jb) => jb.id === job.id);
+		if (!exists) {
+			job.quantity = 1;
+			newJob = [...jobs, job];
+		} else {
+			exists.quantity = exists.quantity + 1;
+			const remaining = jobs.filter((jb) => jb.id !== job.id);
+			newJob = [...remaining, exists];
+		}
+
+		setJobs(newJob);
+		addToDb(job.id);
+	};
+
 	return (
 		<div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 justify-center  my-32 ">
-			<div className="font-manrope text-gray-500 w-3/5">
+			<div className="font-manrope text-gray-500 md:w-3/5">
 				<p className="my-6">
 					<span className="font-extrabold text-black">Job Description: </span>
 					{job_description}
@@ -31,7 +72,7 @@ const JobDetail = ({ job }) => {
 					{experiences}
 				</p>
 			</div>
-			<div className="w-2/5 font-manrope">
+			<div className="lg:w-2/5 font-manrope">
 				<div className="bg-indigo-50 rounded-lg  p-8 ">
 					<h1 className="text-xl font-bold mb-6">Job Details</h1>
 					<hr className="text-gray-500" />
@@ -71,7 +112,9 @@ const JobDetail = ({ job }) => {
 						</div>
 					</div>
 				</div>
-				<button className="btn bg-indigo-500 w-full h-16 mt-6 rounded-lg text-white font-extrabold">Apply Now</button>
+				<button className="btn bg-indigo-500 w-full h-16 mt-6 rounded-lg text-white font-extrabold" onClick={() => handleApply(job)}>
+					Apply Now
+				</button>
 			</div>
 		</div>
 	);
