@@ -9,7 +9,7 @@ const Navbar = () => {
 					Job Genius
 				</a>
 			</div>
-			<div className="navbar-center  md:flex font-manrope font-medium text-base text-gray-500">
+			<div className="navbar-center hidden md:flex font-manrope font-medium text-base text-gray-500">
 				<ul className="menu  md:menu-horizontal px-1">
 					<li className="mr-1">
 						<Link to="/">Home</Link>

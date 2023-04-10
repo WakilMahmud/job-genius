@@ -5,7 +5,7 @@ const Banner = () => {
 		<>
 			<div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-3 lg:px-0">
 				<div className="lg:w-3/5 ">
-					<h1 className="font-extrabold text-7xl">
+					<h1 className="font-extrabold text-4xl lg:text-7xl">
 						One Step Closer To Your <span className="text-primary">Dream Job</span>
 					</h1>
 					<p className="text-lg font-medium text-gray-500 my-8">

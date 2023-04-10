@@ -1,20 +1,28 @@
 import React from "react";
-import account from "../assets/Icons/accounts.png";
-const JobCategories = () => {
+
+const JobCategories = ({ jobCategories }) => {
+	// console.log(jobCategories);
 	return (
 		<>
-			<h1 className="font-extrabold text-5xl">Job Category List</h1>
-			<p className="font-medium text-base text-gray-500 my-8">
+			<h1 className="font-extrabold text-4xl lg:text-5xl px-2 md:px-0">Job Category List</h1>
+			<p className="font-medium text-base text-gray-500 my-8 px-2 md:px-0">
 				Explore thousands of job opportunities with all the information you need. Its your future
 			</p>
-			<div className="card w-96 bg-indigo-50 flex flex-col pt-10">
-				<div className="px-8">
-					<img className="bg-indigo-200 p-4 rounded-lg" src={account} alt="accounts" />
-				</div>
-				<div className="card-body">
-					<h2 className="card-title">Account</h2>
-					<p>300 Jobs Available</p>
-				</div>
+			<div className="flex flex-col lg:flex-row items-center gap-6 w-full">
+				{jobCategories.map((jobCategory) => {
+					const { id, category_logo, category_name, jobs_available } = jobCategory;
+					return (
+						<div className="card w-96 bg-indigo-50 flex flex-col pt-10" key={id}>
+							<div className="px-8">
+								<img className="bg-indigo-200 p-4 rounded-lg" src={category_logo} alt="Category Image" />
+							</div>
+							<div className="card-body">
+								<h2 className="card-title">{category_name}</h2>
+								<p>{jobs_available} Jobs Available</p>
+							</div>
+						</div>
+					);
+				})}
 			</div>
 		</>
 	);
