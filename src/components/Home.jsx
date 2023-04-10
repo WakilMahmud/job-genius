@@ -15,10 +15,9 @@ const Home = () => {
 
 	return (
 		<>
-			<Banner />
-
 			<JobCategoryContext.Provider value={jobCategories}>
 				<FeaturedJobContext.Provider value={featuredJobs}>
+					<Banner />
 					<JobCategories></JobCategories>
 					<FeaturedJobs></FeaturedJobs>
 				</FeaturedJobContext.Provider>

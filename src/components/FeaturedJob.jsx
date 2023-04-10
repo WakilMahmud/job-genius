@@ -2,10 +2,11 @@ import React from "react";
 
 import locationIcon from "../assets/Icons/Location.png";
 import dollar from "../assets/Icons/Frame-5.png";
+import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ featureJob }) => {
 	// console.log(featureJob);
-	const { company_logo, job_title, company_name, job_type, location, job_duration, salary } = featureJob;
+	const { id, company_logo, job_title, company_name, job_type, location, job_duration, salary } = featureJob;
 	return (
 		<>
 			<div className="card flex flex-col py-10 border ">
@@ -30,7 +31,9 @@ const FeaturedJob = ({ featureJob }) => {
 						<p>Salary : {salary}</p>
 					</div>
 				</div>
-				<button className="btn btn-primary w-36 h-12 ml-8 capitalize">View Details</button>
+				<Link to={`/job/${id}`}>
+					<button className="btn btn-primary w-36 h-12 ml-8 capitalize">View Details</button>
+				</Link>
 			</div>
 		</>
 	);
