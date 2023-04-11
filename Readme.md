@@ -12,4 +12,4 @@
 
 <b>Code Link:</b> https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-WakilMahmud
 
-<b>Live Link:</b> https://www.youtube.com/watch?v=Q5dH5mOQ_ik
+<b>Live Link:</b> https://job-genius-wakil.netlify.app/

@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"company_logo": "../src/assets/Logo/google.png",
+		"company_logo": "https://i.ibb.co/db8LFD3/google.png",
 		"job_title": "Technical Database Engineer",
 		"company_name": "Google LLC",
 		"job_type": "Remote",
@@ -20,7 +20,7 @@
 	},
 	{
 		"id": 2,
-		"company_logo": "../src/assets/Logo/netflix.png",
+		"company_logo": "https://i.ibb.co/6rvgLpW/netflix.png",
 		"job_title": "Senior Product Designer",
 		"company_name": "Netflix",
 		"job_type": "Onsite",
@@ -39,7 +39,7 @@
 	},
 	{
 		"id": 3,
-		"company_logo": "../src/assets/Logo/tesla.png",
+		"company_logo": "https://i.ibb.co/nR4w6j1/tesla.png",
 		"job_title": "Software Engineer",
 		"company_name": "Tesla",
 		"job_type": "Remote",
@@ -58,7 +58,7 @@
 	},
 	{
 		"id": 4,
-		"company_logo": "../src/assets/Logo/google-1.png",
+		"company_logo": "https://i.ibb.co/513bNTK/google-1.png",
 		"job_title": "Software Developer",
 		"company_name": "Google",
 		"job_type": "Onsite",
@@ -77,7 +77,7 @@
 	},
 	{
 		"id": 5,
-		"company_logo": "../src/assets/Logo/Facebook.png",
+		"company_logo": "https://i.ibb.co/jRP2q9v/Facebook.png",
 		"job_title": "Senior Data Scientist",
 		"company_name": "Facebook",
 		"job_type": "Onsite",
@@ -96,7 +96,7 @@
 	},
 	{
 		"id": 6,
-		"company_logo": "../src/assets/Logo/Youtube.png",
+		"company_logo": "https://i.ibb.co/GxjLW84/YouTube.png",
 		"job_title": "YouTube Marketing Manager",
 		"company_name": "YouTube",
 		"job_type": "Remote",

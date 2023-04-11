@@ -3,7 +3,7 @@ import Dollar from "../assets/Icons/Frame-5.png";
 import Title from "../assets/Icons/Frame-1.png";
 import Phone from "../assets/Icons/Frame-2.png";
 import Email from "../assets/Icons/Frame-3.png";
-import Address from "../assets/Icons/Frame-4.png";
+import Address from "../assets/Icons/Location.png";
 import { addToDb, getApplyJob } from "../utilities/fakeDb";
 import toast from "react-hot-toast";
 
