@@ -21,7 +21,7 @@ const FeaturedJob = ({ featureJob }) => {
 					<span className="w-24 h-10 border border-indigo-500 mr-4 inline-block rounded text-center pt-2">{job_type}</span>
 					<span className="w-28 h-10 border border-indigo-500 inline-block rounded text-center pt-2">{job_duration}</span>
 				</div>
-				<div className="text-gray-500 font-manrope font-medium text-xl flex gap-6 mb-4 ml-8">
+				<div className="text-gray-500 font-manrope font-medium text-xl flex flex-col md:flex-row gap-6 mb-4 ml-8">
 					<div className="flex h-8 items-center">
 						<img src={locationIcon} alt="Location Icon" />
 						<p className="text-xl">{location}</p>

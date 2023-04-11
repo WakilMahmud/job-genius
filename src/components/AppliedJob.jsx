@@ -6,7 +6,7 @@ import dollar from "../assets/Icons/Frame-5.png";
 import { Link } from "react-router-dom";
 
 const AppliedJob = ({ job }) => {
-	console.log(job);
+	// console.log(job);
 	const { id, company_logo, job_title, company_name, job_type, location, job_duration, salary } = job;
 
 	return (
