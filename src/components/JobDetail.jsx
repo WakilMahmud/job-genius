@@ -24,13 +24,6 @@ const JobDetail = ({ job }) => {
 			newJob = [...jobs, job];
 
 			toast.success("Successfully Apply");
-		} else {
-			// console.log(exists);
-			toast.custom(<div className="bg-orange-200 p-4 rounded-2xl font-manrope">You have already applied to this job</div>);
-
-			// exists.quantity = exists.quantity + 1;
-			// const remaining = jobs.filter((jb) => jb.id !== job.id);
-			// newJob = [...remaining, exists];
 		}
 
 		setJobs(newJob);
