@@ -13,6 +13,7 @@ function App() {
 			<div className="min-h-[calc(100vh-112px)]">
 				<Outlet />
 			</div>
+
 			<Footer />
 		</>
 	);

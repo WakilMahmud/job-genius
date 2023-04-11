@@ -111,7 +111,7 @@ const JobDetail = ({ job }) => {
 						</div>
 					</div>
 				</div>
-				<button className="btn bg-indigo-500 w-full h-16 mt-6 rounded-lg text-white font-extrabold" onClick={() => handleApply(job)}>
+				<button className=" bg-indigo-600 hover:bg-indigo-700 w-full h-16 mt-6 rounded-lg text-white font-extrabold" onClick={() => handleApply(job)}>
 					Apply Now
 				</button>
 			</div>
