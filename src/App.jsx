@@ -8,7 +8,10 @@ function App() {
 			<div className="bg-indigo-50">
 				<Navbar />
 			</div>
-			<Outlet />
+			<div className="min-h-[calc(100vh-112px)]">
+				<Outlet />
+			</div>
+
 			<Footer />
 		</>
 	);

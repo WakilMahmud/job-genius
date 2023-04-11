@@ -26,7 +26,7 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<button className="w-48 py-2 rounded-lg font-manrope font-extrabold text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
+				<button className="lg:w-48 p-2 rounded-lg font-manrope font-extrabold text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
 					Start Applying
 				</button>
 			</div>

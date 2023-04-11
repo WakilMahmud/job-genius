@@ -11,8 +11,8 @@ const AppliedJob = ({ job }) => {
 
 	return (
 		<>
-			<div className="card flex flex-row justify-between py-10 border my-4">
-				<div className="flex">
+			<div className="card flex flex-col lg:flex-row justify-between py-10 border my-4">
+				<div className="flex flex-col md:flex-row items-center">
 					<div className="ml-8 rounded-lg  w-60 h-60 flex justify-center items-center  bg-slate-100">
 						<img className="px-10 " src={company_logo} alt="Category Image" />
 					</div>
@@ -25,7 +25,7 @@ const AppliedJob = ({ job }) => {
 							<span className="w-24 h-10 border border-indigo-500 mr-4 inline-block rounded text-center pt-2">{job_type}</span>
 							<span className="w-28 h-10 border border-indigo-500 inline-block rounded text-center pt-2">{job_duration}</span>
 						</div>
-						<div className="text-gray-500 font-manrope font-semibold text-xl flex gap-6 ml-8">
+						<div className="text-gray-500 font-manrope font-semibold text-xl flex flex-col md:flex-row gap-6 ml-8">
 							<div className="flex h-8 items-center">
 								<img src={locationIcon} alt="Location Icon" />
 								<p className="text-xl font-medium">{location}</p>
@@ -37,7 +37,7 @@ const AppliedJob = ({ job }) => {
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center items-center w-1/4">
+				<div className="flex justify-center items-center w-1/4  mx-auto mt-8 md:mt-0 md:ml-auto">
 					<Link to={`/job/${id}`}>
 						<button className="btn w-36 btn-primary  h-12 capitalize">View Details</button>
 					</Link>
