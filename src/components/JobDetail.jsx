@@ -5,6 +5,7 @@ import Phone from "../assets/Icons/Frame-2.png";
 import Email from "../assets/Icons/Frame-3.png";
 import Address from "../assets/Icons/Frame-4.png";
 import { addToDb, getApplyJob } from "../utilities/fakeDb";
+import toast from "react-hot-toast";
 
 const JobDetail = ({ job }) => {
 	// console.log(job);
@@ -12,43 +13,44 @@ const JobDetail = ({ job }) => {
 
 	const [jobs, setJobs] = useState([]);
 
-	useEffect(() => {
-		const storedJobs = getApplyJob();
-		const savedJobs = [];
-		// step 1: get id of the addedJob
-		for (const id in storedJobs) {
-			// step 2: get jb from jobs state by using id
-			const addedJob = jobs.find((jb) => jb.id === id);
-			if (addedJob) {
-				// step 3: add quantity
-				const quantity = storedJobs[id];
-				addedJob.quantity = quantity;
-				// step 4: add the added jb to the saved jobs
-				savedJobs.push(addedJob);
-			}
-			// console.log('added jb', addedJob)
-		}
-		// step 5: set the jobs
-		setJobs(savedJobs);
-	}, [job]);
-
 	const handleApply = (job) => {
 		// console.log(job);
 		let newJob = [];
 
 		const exists = jobs.find((jb) => jb.id === job.id);
 		if (!exists) {
+			// console.log(exists);
 			job.quantity = 1;
 			newJob = [...jobs, job];
+
+			toast.success("Successfully Apply");
 		} else {
-			exists.quantity = exists.quantity + 1;
-			const remaining = jobs.filter((jb) => jb.id !== job.id);
-			newJob = [...remaining, exists];
+			// console.log(exists);
+			toast.custom(<div className="bg-orange-200 p-4 rounded-2xl font-manrope">You have already applied to this job</div>);
+
+			// exists.quantity = exists.quantity + 1;
+			// const remaining = jobs.filter((jb) => jb.id !== job.id);
+			// newJob = [...remaining, exists];
 		}
 
 		setJobs(newJob);
 		addToDb(job.id);
 	};
+
+	useEffect(() => {
+		const storedJobs = getApplyJob();
+		const savedJobs = [];
+
+		for (const id in storedJobs) {
+			const addedJob = jobs.find((jb) => jb.id === id);
+			if (addedJob) {
+				const quantity = storedJobs[id];
+				addedJob.quantity = quantity;
+				savedJobs.push(addedJob);
+			}
+		}
+		setJobs(savedJobs);
+	}, [job]);
 
 	return (
 		<div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 justify-center  my-32 ">

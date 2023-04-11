@@ -11,7 +11,7 @@ const AppliedJob = ({ job }) => {
 
 	return (
 		<>
-			<div className="card flex flex-col lg:flex-row justify-between py-10 border my-4">
+			<div className="card flex flex-col md:flex-row justify-between py-10 border my-4">
 				<div className="flex flex-col md:flex-row items-center">
 					<div className="ml-8 rounded-lg  w-60 h-60 flex justify-center items-center  bg-slate-100">
 						<img className="px-10 " src={company_logo} alt="Category Image" />
@@ -37,7 +37,7 @@ const AppliedJob = ({ job }) => {
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center items-center w-1/4  mx-auto mt-8 md:mt-0 md:ml-auto">
+				<div className="flex justify-center items-center w-1/4  mx-auto mt-8 md:mt-0 md:mr-3">
 					<Link to={`/job/${id}`}>
 						<button className="btn w-36 btn-primary  h-12 capitalize">View Details</button>
 					</Link>

@@ -5,10 +5,11 @@ const addToDb = (id) => {
 	const quantity = applyJob[id];
 	if (!quantity) {
 		applyJob[id] = 1;
-	} else {
-		const newQuantity = quantity + 1;
-		applyJob[id] = newQuantity;
 	}
+	// else {
+	// 	const newQuantity = quantity + 1;
+	// 	applyJob[id] = newQuantity;
+	// }
 	localStorage.setItem("apply-job", JSON.stringify(applyJob));
 };
 
