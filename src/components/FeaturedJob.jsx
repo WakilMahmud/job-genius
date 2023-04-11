@@ -22,17 +22,17 @@ const FeaturedJob = ({ featureJob }) => {
 					<span className="w-28 h-10 border border-indigo-500 inline-block rounded text-center pt-2">{job_duration}</span>
 				</div>
 				<div className="text-gray-500 font-manrope  text-xl flex flex-col md:flex-row gap-6 mb-6 ml-8">
-					<div className="flex h-8 items-center">
-						<img src={locationIcon} alt="Location Icon" />
+					<div className="flex h-8 items-center gap-2 mr-4">
+						<img className="grayscale" src={locationIcon} alt="Location Icon" />
 						<p className="text-xl ">{location}</p>
 					</div>
-					<div className="flex h-8 items-center -mt-4 md:mt-0">
-						<img src={dollar} alt="Dollar Icon" />
+					<div className="flex h-8 items-center -mt-4 md:mt-0 gap-2">
+						<img className="grayscale" src={dollar} alt="Dollar Icon" />
 						<p className="text-xl">Salary : {salary}</p>
 					</div>
 				</div>
 				<Link to={`/job/${id}`}>
-					<button className="btn btn-primary w-36 h-12 ml-8 capitalize">View Details</button>
+					<button className="w-36 h-12 ml-8 font-bold text-white text-lg rounded-lg  bg-indigo-600 hover:bg-indigo-700">View Details</button>
 				</Link>
 			</div>
 		</>

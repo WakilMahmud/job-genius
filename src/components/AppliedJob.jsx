@@ -26,12 +26,12 @@ const AppliedJob = ({ job }) => {
 							<span className="w-28 h-10 border border-indigo-500 inline-block rounded text-center pt-2">{job_duration}</span>
 						</div>
 						<div className="text-gray-500 font-manrope font-semibold text-xl flex flex-col md:flex-row gap-2 md:gap-6 ml-8">
-							<div className="flex h-8 items-center">
-								<img src={locationIcon} alt="Location Icon" />
+							<div className="flex h-8 items-center gap-2 mr-4">
+								<img className="grayscale" src={locationIcon} alt="Location Icon" />
 								<p className="text-xl font-medium">{location}</p>
 							</div>
-							<div className="flex h-8 items-center ">
-								<img src={dollar} alt="Dollar Icon" />
+							<div className="flex h-8 items-center gap-2">
+								<img className="grayscale" src={dollar} alt="Dollar Icon" />
 								<p className="text-xl font-medium">Salary : {salary}</p>
 							</div>
 						</div>
@@ -39,7 +39,7 @@ const AppliedJob = ({ job }) => {
 				</div>
 				<div className="flex justify-center items-center w-1/4  mx-auto mt-8 md:mt-0 md:mr-3">
 					<Link to={`/job/${id}`}>
-						<button className="btn w-36 btn-primary  h-12 capitalize">View Details</button>
+						<button className="w-36 h-12 ml-8 font-bold text-white text-lg rounded-lg  bg-indigo-600 hover:bg-indigo-700">View Details</button>
 					</Link>
 				</div>
 			</div>

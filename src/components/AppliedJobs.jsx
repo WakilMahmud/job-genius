@@ -40,7 +40,7 @@ const AppliedJobs = () => {
 
 			<div className="max-w-7xl mx-auto flex flex-col my-32 px-4">
 				{showJob.length > 0 && (
-					<div className="font-manrope text-white w-1/4 ml-auto">
+					<div className="font-manrope text-white w-1/4 ml-auto font-semibold">
 						<button className="w-24 h-10 border bg-indigo-600 mr-4 rounded text-center py-2" onClick={() => filterJob("Remote")}>
 							Remote
 						</button>

@@ -34,7 +34,7 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<button className=" md:w-48 p-2 rounded-lg font-manrope font-extrabold text-base md:text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
+				<button className=" md:w-48 p-2 rounded-lg font-manrope font-extrabold text-base md:text-xl bg-indigo-600 hover:bg-indigo-700 text-white">
 					Start Applying
 				</button>
 			</div>

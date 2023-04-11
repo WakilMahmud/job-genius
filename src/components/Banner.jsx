@@ -12,7 +12,7 @@ const Banner = () => {
 						Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application
 						from start to finish.
 					</p>
-					<button className="w-40 py-3 rounded-lg font-manrope font-extrabold text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
+					<button className="w-40 py-3 rounded-lg font-manrope font-extrabold text-xl bg-indigo-600 hover:bg-indigo-700 text-white">
 						Get Started
 					</button>
 				</div>

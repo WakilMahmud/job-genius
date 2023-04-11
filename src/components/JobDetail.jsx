@@ -24,6 +24,8 @@ const JobDetail = ({ job }) => {
 			newJob = [...jobs, job];
 
 			toast.success("Successfully Apply");
+		} else {
+			toast("You have already applied to this job");
 		}
 
 		setJobs(newJob);
@@ -57,12 +59,14 @@ const JobDetail = ({ job }) => {
 					{job_responsibility}
 				</p>
 				<p className="my-6">
-					<span className="font-extrabold text-black">Job Responsibility: </span>
+					<span className="font-extrabold text-black">Educational Requirements: </span>
+					<br />
 					<br />
 					{educational_requirements}
 				</p>
 				<p className="my-6">
 					<span className="font-extrabold text-black">Experiences: </span>
+					<br />
 					<br />
 					{experiences}
 				</p>
