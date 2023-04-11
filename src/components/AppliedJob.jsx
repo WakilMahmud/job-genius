@@ -11,28 +11,28 @@ const AppliedJob = ({ job }) => {
 
 	return (
 		<>
-			<div className="card flex flex-row justify-between py-10 border my-8">
+			<div className="card flex flex-row justify-between py-10 border my-4">
 				<div className="flex">
-					<div className="ml-8">
-						<img className="py-40 px-24 bg-slate-100 rounded-lg" src={company_logo} alt="Category Image" />
+					<div className="ml-8 rounded-lg  w-60 h-60 flex justify-center items-center  bg-slate-100">
+						<img className="px-10 " src={company_logo} alt="Category Image" />
 					</div>
 					<div>
 						<div className="card-body font-manrope">
 							<h2 className="card-title font-extrabold text-2xl">{job_title}</h2>
 							<p className="text-gray-500 font-semibold text-xl">{company_name}</p>
 						</div>
-						<div className="font-manrope text-base font-extrabold ml-8 mb-8 -mt-4 text-indigo-500">
-							<span className="w-24 h-10 border mr-4 inline-block rounded text-center pt-2">{job_type}</span>
-							<span className="w-28 h-10 border inline-block rounded text-center pt-2">{job_duration}</span>
+						<div className="font-manrope text-base font-extrabold ml-8 mb-4 -mt-4 text-indigo-500">
+							<span className="w-24 h-10 border border-indigo-500 mr-4 inline-block rounded text-center pt-2">{job_type}</span>
+							<span className="w-28 h-10 border border-indigo-500 inline-block rounded text-center pt-2">{job_duration}</span>
 						</div>
-						<div className="text-gray-500 font-manrope font-semibold text-xl flex gap-6 mb-8 ml-8">
+						<div className="text-gray-500 font-manrope font-semibold text-xl flex gap-6 ml-8">
 							<div className="flex h-8 items-center">
 								<img src={locationIcon} alt="Location Icon" />
-								<p>{location}</p>
+								<p className="text-xl font-medium">{location}</p>
 							</div>
 							<div className="flex h-8 items-center ">
 								<img src={dollar} alt="Dollar Icon" />
-								<p>Salary : {salary}</p>
+								<p className="text-xl font-medium">Salary : {salary}</p>
 							</div>
 						</div>
 					</div>
