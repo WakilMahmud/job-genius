@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
+	const [isClick, setIsClick] = useState(true);
 	return (
-		<nav className="navbar max-w-7xl mx-auto py-8">
+		<nav className="navbar max-w-7xl mx-auto py-10 md:py-8">
 			<div className="navbar-start">
-				<a href="#" className="text-3xl font-manrope font-extrabold">
+				<a href="#" className="text-2xl md:text-3xl font-manrope font-extrabold">
 					Job Genius
 				</a>
 			</div>
-			<div className="navbar-center hidden md:flex font-manrope font-medium text-base text-gray-500">
-				<ul className="menu  md:menu-horizontal px-1">
+
+			<Bars3Icon className="md:hidden h-14" onClick={() => setIsClick(!isClick)}></Bars3Icon>
+			<div
+				className={`navbar-center  ${
+					isClick ? "hidden" : "relative top-14 md:top-auto"
+				} md:flex font-manrope font-medium text-base text-gray-500 my-8 `}
+			>
+				<ul className="menu  md:menu-horizontal px-1 ">
 					<li className="mr-1">
 						<Link to="/">Home</Link>
 					</li>
@@ -26,7 +34,7 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<button className="lg:w-48 p-2 rounded-lg font-manrope font-extrabold text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
+				<button className=" md:w-48 p-2 rounded-lg font-manrope font-extrabold text-base md:text-xl bg-indigo-700 hover:bg-indigo-600 text-white">
 					Start Applying
 				</button>
 			</div>

@@ -1,10 +1,15 @@
-Create a Readme file and make a list of the best features of your project.
-The list can be ordered or unordered.
-The Readme file must contain a live link(hosting) of your project.
+# Website Title: <em>Job Genius</em>
 
-Error Page
-Responsive Navbar
-Make a Readme file
+## Features
 
-Mobile Responsive (Home page, statistics)
-Toast message on Apply job button (done but issue is)
+- Single Page Application
+- Responsive Navbar
+- No Page reload
+- You can see already Applied Jobs because of Local Storage
+- Filtering The Applied Jobs
+- Generally show 4 Jobs only, if you want to see all jobs, then click <b>See All Jobs</b> Button
+- Handling Route Error
+
+<b>Code Link:</b> https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-WakilMahmud
+
+<b>Live Link:</b> https://www.youtube.com/watch?v=Q5dH5mOQ_ik

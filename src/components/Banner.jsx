@@ -8,7 +8,7 @@ const Banner = () => {
 					<h1 className="font-extrabold text-4xl lg:text-7xl">
 						One Step Closer To Your <span className="text-primary">Dream Job</span>
 					</h1>
-					<p className="text-lg font-medium text-gray-500 my-8">
+					<p className="text-lg font-medium text-gray-500 my-8 text-justify">
 						Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application
 						from start to finish.
 					</p>
@@ -16,7 +16,7 @@ const Banner = () => {
 						Get Started
 					</button>
 				</div>
-				<div className="mt-8 lg:mt-0">
+				<div className="mt-10 lg:mt-0">
 					<img className="object-cover" src={BannerImg} alt="Banner Image" />
 				</div>
 			</div>

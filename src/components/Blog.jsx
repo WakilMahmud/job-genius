@@ -2,18 +2,18 @@ import React from "react";
 
 const Blog = () => {
 	return (
-		<div className="max-w-7xl mx-auto font-manrope my-32">
+		<div className="max-w-7xl mx-auto font-manrope my-32 px-4">
 			<div className="p-8 border rounded-lg bg-slate-100 mb-8">
-				<h1 className="font-bold text-2xl">1. When should you use context API?</h1>
+				<h1 className="font-bold text-xl md:text-2xl mb-6">1. When should you use context API?</h1>
 				<p className="font-normal text-gray-500 text-justify">
 					The Context API in React is a feature that allows you to share data between components without having to pass props down manually at every
-					level. It can be used for scenarios such as theming, authentication, multilingual support, and managing state. The Context API is most
-					appropriate when you have data that needs to be shared between multiple components and the data does not change frequently. If the data is
-					changing frequently, it may be more appropriate to use a more advanced state management library such as Redux.
+					level. It can be used for scenarios such as authentication, managing state. The Context API is most appropriate when you have data that
+					needs to be shared between multiple components and the data does not change frequently. If the data is changing frequently, it may be more
+					appropriate to use a more advanced state management library such as Redux.
 				</p>
 			</div>
 			<div className="p-8 border rounded-lg bg-slate-100 mb-8">
-				<h1 className="font-bold text-2xl">2. What is a custom hook?</h1>
+				<h1 className="font-bold text-xl md:text-2xl mb-6">2. What is a custom hook?</h1>
 				<p className="font-normal text-gray-500 text-justify">
 					A custom hook in React is a JavaScript function that starts with the prefix use and allows you to encapsulate and reuse complex stateful
 					logic across multiple components. Custom hooks provide a way to extract logic and stateful functionality from a component, making it easier
@@ -22,7 +22,7 @@ const Blog = () => {
 				</p>
 			</div>
 			<div className="p-8 border rounded-lg bg-slate-100 mb-8">
-				<h1 className="font-bold text-2xl">3. What is useRef?</h1>
+				<h1 className="font-bold text-xl md:text-2xl mb-6">3. What is useRef?</h1>
 				<p className="font-normal text-gray-500 text-justify">
 					useRef is a hook in React that allows you to create a mutable reference to a DOM element or a value that persists across component
 					re-renders. It can be used to access the properties and methods of a DOM element or to store data that doesn't need to trigger a component
@@ -31,7 +31,7 @@ const Blog = () => {
 				</p>
 			</div>
 			<div className="p-8 border rounded-lg bg-slate-100 mb-8">
-				<h1 className="font-bold text-2xl">4. What is useMemo?</h1>
+				<h1 className="font-bold text-xl md:text-2xl mb-6">4. What is useMemo?</h1>
 				<p className="font-normal text-gray-500 text-justify">
 					useMemo is a hook in React that allows you to memoize the result of a function, caching the value returned by the function and returning it
 					on subsequent calls if the inputs have not changed. This can help to improve the performance of your React components by avoiding

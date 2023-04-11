@@ -10,23 +10,23 @@ const FeaturedJob = ({ featureJob }) => {
 	return (
 		<>
 			<div className="card flex flex-col py-10 border ">
-				<div className="ml-8 h-16">
+				<div className="ml-8 h-14 mb-4">
 					<img className="h-full w-32" src={company_logo} alt="Category Image" />
 				</div>
 				<div className="card-body font-manrope">
-					<h2 className="card-title font-extrabold text-2xl">{job_title}</h2>
+					<h2 className="card-title font-extrabold text-2xl mb-2">{job_title}</h2>
 					<p className="text-gray-500 font-medium text-xl">{company_name}</p>
 				</div>
-				<div className="font-manrope text-base font-extrabold ml-8 mb-4 -mt-4 text-indigo-500">
+				<div className="font-manrope text-base font-extrabold ml-8 mb-4  text-indigo-500">
 					<span className="w-24 h-10 border border-indigo-500 mr-4 inline-block rounded text-center pt-2">{job_type}</span>
 					<span className="w-28 h-10 border border-indigo-500 inline-block rounded text-center pt-2">{job_duration}</span>
 				</div>
-				<div className="text-gray-500 font-manrope font-medium text-xl flex flex-col md:flex-row gap-6 mb-4 ml-8">
+				<div className="text-gray-500 font-manrope  text-xl flex flex-col md:flex-row gap-6 mb-6 ml-8">
 					<div className="flex h-8 items-center">
 						<img src={locationIcon} alt="Location Icon" />
-						<p className="text-xl">{location}</p>
+						<p className="text-xl ">{location}</p>
 					</div>
-					<div className="flex h-8 items-center ">
+					<div className="flex h-8 items-center -mt-4 md:mt-0">
 						<img src={dollar} alt="Dollar Icon" />
 						<p className="text-xl">Salary : {salary}</p>
 					</div>

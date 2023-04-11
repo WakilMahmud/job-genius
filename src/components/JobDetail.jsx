@@ -46,9 +46,9 @@ const JobDetail = ({ job }) => {
 	}, [job]);
 
 	return (
-		<div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 justify-center  my-32 ">
-			<div className="font-manrope text-gray-500 md:w-3/5">
-				<p className="my-6">
+		<div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 justify-center  my-32 px-4">
+			<div className="font-manrope text-gray-500 md:w-3/5 text-justify ">
+				<p className="mb-6">
 					<span className="font-extrabold text-black">Job Description: </span>
 					{job_description}
 				</p>
